@@ -53,9 +53,11 @@ void loop() {
         FastLED.clear();
         CRGB warmYellow = CRGB(255, 200, 0);
         FastLED.setBrightness(96);
+
         for (int value : res) {
             leds[value] = warmYellow;
         }
+        
         leds[91]= warmYellow;
         leds[93]= warmYellow;
         leds[171]= warmYellow;
